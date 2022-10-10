@@ -1,0 +1,58 @@
+@media screen and (max-width:948px) {
+    .top{
+       flex-direction: column;
+    }
+    .recs{
+        min-width: 100%;
+        max-width:100px !important;
+        font-size: larger;
+        height: 200px;
+        /* border: 2px solid green; */
+        /* max-height: 20%; */
+    }
+    .all-pics_holder{
+        min-width: 200px;
+        min-height: 600px;
+    }
+    .slide-pics{
+        background-position: center;
+        /* min-height: 50%; */
+        min-width: 50%;
+        /* margin: 0; */
+    }
+    .right-head{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .backdrop{
+        display: block;
+        background: rgba(0, 0, 0,0.1);
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom: 0;
+    }
+
+
+    .mobile-links{
+        display: none;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .end{
+        flex-wrap: wrap;
+        height: 1000px;
+        padding: 20px;
+        /* margin-bottom: 50px; */
+    }
+
+}

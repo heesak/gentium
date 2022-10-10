@@ -7,12 +7,12 @@ html{
     scroll-behavior: smooth;
 }
 .house{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     background: rgb(0, 0, 0);
 }
 .main{
     width: 100%;
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
     display: flex;
    
     background: linear-gradient(to right, #1a2980, #26d0ce);
@@ -20,7 +20,8 @@ html{
     align-items: center;
     padding-top: 30px;
     /* position: fixed; */
-}
+    /* position: relative;*/
+} 
 .left-head{
     background: url(./circle\ hc\ logo.png);
     /* background-position: 100%; */
@@ -29,7 +30,7 @@ html{
     background-size: contain;
     width: 25%;
     height: 100px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-bottom: 5px;
     /* color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -60,6 +61,39 @@ li{
     /* border: 2px solid rgb(207, 205, 205); */
     
 }
+
+.hamburger{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    padding: 5px 20px;
+    height: 40px;
+}
+.menubar{
+   /* border: 2px solid red; */
+    background: white;
+   width: 60px; 
+   height: 8px;
+   z-index: 10;
+}
+.mobile-links{
+    display: none;
+    width: 50%;
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.hamburger:focus.mobile-links{
+    display: none;
+}
+
+
 
 .smart-line{
     border-top: 3px solid rgb(224, 80, 104);
@@ -108,7 +142,7 @@ li{
     color: white;
 }
 .line{
-    border-top: 2px solid rgb(255, 252, 253);
+    /* border-top: 2px solid rgb(255, 252, 253); */
     width: 60px;
     margin-left: 10px;
 
@@ -157,13 +191,13 @@ h1{
 .all-pics_holder{
     height: 600px;
     /* width: 300px; */
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .slide-pics{
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     border-radius: 20px;
     width: 60%;
     margin: 0 auto;
@@ -175,7 +209,7 @@ h1{
 
 }
 .holdd{
-    border: 3px solid white;
+    /* border: 3px solid white; */
     position: relative;
     display: flex;
   
@@ -183,7 +217,7 @@ h1{
 .circle{
     
     margin: 10px 5px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     background: #f2f2f2;
     width: 25px;
     height: 25px;
@@ -194,19 +228,17 @@ h1{
 .circle:hover{
     box-shadow: 2px 2px 2px 2px solid #b8b6b6;
     cursor: pointer;
-    width: 40px;
     height: 40px;
     transition: 1s;
     background: linear-gradient(to right, #1a2980, #26d0ce);
+    width: 40px;
     margin: 10px 20px;
 }
 
 
 
 /* how we can help starts here */
-.how{
-    /* border: 2px solid tomato; */
-}
+
 .top{
     margin-top: 15px;
     /* border: 3px solid white; */
@@ -258,8 +290,9 @@ footer{
     /* height: 300px; */
     display: flex;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding: 50px auto;
     color: white;
+    flex-wrap: nowrap;
 }
 footer h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -328,9 +361,7 @@ color: aliceblue;
 
 
 }
-a:hover{
-   
-}
+
 .social-icons{
     text-decoration: none;
     
